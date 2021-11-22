@@ -17,18 +17,17 @@ function App () {
     <>
       <Suspense fallback={<div />}>
         <BackgroundComponent />
-        <AppContainer>
-          <Title>Alex <span>Marcos</span></Title>
-          <ContainerSeeMe>
-            <Link aria-label='github' onClick={() => handlerClick('github')} href='https://github.com/kappys1'><ImGithub /></Link>
-            <Link aria-label='linkedin' onClick={() => handlerClick('Linkedin')} href='https://www.linkedin.com/in/alexmarcosgutierrez/'> <ImLinkedin className='linkedin' /></Link>
-            <Link aria-label='npm' onClick={() => handlerClick('NPM')} href='https://www.npmjs.com/~alex-tmt'><ImNpm className='npm' /></Link>
-            <Link aria-label='pdf' onClick={() => handlerClick('pdf')} href={pdf}><ImFilePdf className='pdf' /></Link>
-          </ContainerSeeMe>
-          <Description>I'm working to show you my best</Description>
-        </AppContainer>
       </Suspense>
-
+      <AppContainer>
+        <Title>Alex <span>Marcos</span></Title>
+        <ContainerSeeMe>
+          <Link aria-label='github' onClick={() => handlerClick('github')} href='https://github.com/kappys1'><ImGithub /></Link>
+          <Link aria-label='linkedin' onClick={() => handlerClick('Linkedin')} href='https://www.linkedin.com/in/alexmarcosgutierrez/'> <ImLinkedin className='linkedin' /></Link>
+          <Link aria-label='npm' onClick={() => handlerClick('NPM')} href='https://www.npmjs.com/~alex-tmt'><ImNpm className='npm' /></Link>
+          <Link aria-label='pdf' onClick={() => handlerClick('pdf')} href={pdf}><ImFilePdf className='pdf' /></Link>
+        </ContainerSeeMe>
+        <Description>I'm working to show you my best</Description>
+      </AppContainer>
     </>
   )
 }
