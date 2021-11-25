@@ -25,7 +25,7 @@ export const BackgroundComponent = ({ children }) => {
       if (vantaEffect) vantaEffect.destroy()
     }
   }, [vantaEffect])
-
+  console.log('background')
   return (
     <Background ref={myRef}>
       {children}

@@ -5,8 +5,10 @@ import { ImGithub, ImLinkedin, ImNpm, ImFilePdf } from 'react-icons/im'
 import pdf from './assets/resume.pdf'
 const TRACKING_ID = 'UA-110018938-5'
 const BackgroundComponent = React.lazy(() => import('./components/background'))
-ReactGA.initialize(TRACKING_ID)
+
 function App () {
+  ReactGA.initialize(TRACKING_ID)
+  ReactGA.pageview(window.location.pathname + window.location.search)
   const handlerClick = (link) => {
     ReactGA.event({
       category: 'User',
