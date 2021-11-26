@@ -23,10 +23,10 @@ function App () {
       <AppContainer>
         <Title>Alex <span>Marcos</span></Title>
         <ContainerSeeMe>
-          <Link aria-label='github' onClick={() => handlerClick('github')} href='https://github.com/kappys1'><ImGithub /></Link>
-          <Link aria-label='linkedin' onClick={() => handlerClick('Linkedin')} href='https://www.linkedin.com/in/alexmarcosgutierrez/'> <ImLinkedin className='linkedin' /></Link>
-          <Link aria-label='npm' onClick={() => handlerClick('NPM')} href='https://www.npmjs.com/~alex-tmt'><ImNpm className='npm' /></Link>
-          <Link aria-label='pdf' onClick={() => handlerClick('pdf')} href={pdf}><ImFilePdf className='pdf' /></Link>
+          <Link aria-label='github' onClick={() => handlerClick('github')} href='https://github.com/kappys1' target='_blank' rel='noreferrer'><ImGithub /></Link>
+          <Link aria-label='linkedin' onClick={() => handlerClick('Linkedin')} href='https://www.linkedin.com/in/alexmarcosgutierrez/' target='_blank' rel='noreferrer'> <ImLinkedin className='linkedin' /></Link>
+          <Link aria-label='npm' onClick={() => handlerClick('NPM')} href='https://www.npmjs.com/~alex-tmt' target='_blank' rel='noreferrer'><ImNpm className='npm' /></Link>
+          <Link aria-label='pdf' onClick={() => handlerClick('pdf')} href={pdf} target='_blank' rel='noreferrer'><ImFilePdf className='pdf' /></Link>
         </ContainerSeeMe>
         <Description>I'm working to show you my best</Description>
       </AppContainer>
